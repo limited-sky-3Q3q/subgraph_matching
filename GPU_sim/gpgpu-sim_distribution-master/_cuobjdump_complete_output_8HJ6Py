@@ -1,0 +1,615 @@
+
+Fatbin elf code:
+================
+arch = sm_20
+code version = [1,4]
+producer = cuda
+host = linux
+compile_size = 64bit
+identifier = /home/sr/BFS/naive4gpuBfs/topDownBfs/main.cu
+
+.section .strtab	STRTAB
+
+.section .shstrtab	STRTAB
+
+.section .symtab	SYMTAB
+ index           value           size      info    other  shndx    name  
+   0               0               0        0        0      0     (null)
+   1               0               0        3        0      1     .shstrtab
+   2               0               0        3        0      2     .strtab
+   3               0               0        3        0      3     .symtab
+   4               0               0        3        0     10     .nv.global.init
+   5               0               0        3        0      0     
+   6               0             872        3        0      4     .text._Z6KernelP4NodePiPbS2_S1_S2_ii
+   7               0               0        3        0      6     .nv.info._Z6KernelP4NodePiPbS2_S1_S2_ii
+   8               0               0        3        0     11     .nv.info
+   9               0               0        3        0      5     .nv.constant0._Z6KernelP4NodePiPbS2_S1_S2_ii
+  10               0               0        3        0      7     .rel.text._Z6KernelP4NodePiPbS2_S1_S2_ii
+  11               0               0        3        0      8     .nv.constant14
+  12               0               0        3        0      9     .rel.nv.constant14
+  13               0             872       12       10      4     _Z6KernelP4NodePiPbS2_S1_S2_ii
+  14               0               0       12        0      0     vprintf
+  15               0              20       11        0     10     __constant847
+  16              20               5       11        0     10     __constant845
+
+
+.nv.constant0._Z6KernelP4NodePiPbS2_S1_S2_ii	PROGBITS
+0x00000000  0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  0x00000000  0x00000000  0x00000000  
+0x00000000  
+
+
+.nv.constant14	PROGBITS
+0x00000000  0x00000000  0x00000000  0x00000000  
+
+.section .rel.nv.constant14	REL
+0    __constant845    R_NV_64
+8    __constant847    R_NV_64
+
+
+.nv.global.init	PROGBITS
+0x6425200a  0x20642520  0x25206425  0x21212164  0x00212121  
+0x6425200a   0 
+
+
+.text._Z6KernelP4NodePiPbS2_S1_S2_ii	PROGBITS
+bar = 0	reg = 26	lmem=0	smem=0
+0x00005de4  0x28004404  0x40105d03  0x4800c000  
+0x50009de4  0x28004001  0x10015de4  0x28007800  
+0x00011de4  0x28007800  0x00101c03  0x4800c000  
+0x00109c85  0xc8000000  0x10019c03  0x48014000  
+0xfff1dc43  0x48000000  0x00010007  0x10000000  
+0x94001c04  0x2c000000  0x84009c04  0x2c000000  
+0x08059d03  0x40000000  0x4161dc23  0x1b0e4001  
+0x000001e7  0x80000000  0x7d661c23  0x7000c004  
+0xc1611c03  0x48014000  0xd1815c43  0x48004000  
+0x00401c25  0x84000000  0xfc01dc23  0x190e0000  
+0x000001e7  0x80000000  0xe1619c03  0x48014000  
+0x0400dde2  0x18000000  0x004fdc25  0x94000000  
+0xf181dc43  0x48004000  0x31609c03  0x5001c000  
+0x0060dc25  0x94000000  0x31601c43  0x20ffc000  
+0x31801c03  0x2080c000  0x80251c03  0x48014000  
+0x90055c43  0x48004000  0x01409c85  0x84000000  
+0x11401c85  0x84000000  0x08001c03  0x48000000  
+0x0801dc23  0x198e0000  0x000001e7  0x80000000  
+0xa0011de4  0x28004000  0x1020dce3  0x5000c000  
+0x10249ca3  0x2009c000  0xb034dc43  0x48004000  
+0x0125dc85  0x84000000  0xa0000007  0x60000007  
+0x7d765c23  0x7000c004  0xe1711c03  0x48014000  
+0xf1915c43  0x48004000  0x0040dc25  0x84000000  
+0xfc31dc23  0x1a8e0000  0x000001f4  0x40000000  
+0x4000dde4  0x28004001  0x0c319ca3  0x5000c000  
+0x7c311c23  0x5800c000  0x04301e03  0x6000c000  
+0x7c615c23  0x5800c000  0x0830de03  0x6000c000  
+0x0c51dc03  0x6800c000  0x0c415c03  0x6800c000  
+0x7c321c23  0x5800c000  0x18711c03  0x48000000  
+0x7c019c23  0x5800c000  0x0c81dc03  0x6800c000  
+0x40515c03  0x48004001  0x0c619c03  0x6800c000  
+0x0c71dc03  0x48000000  0x0010dc03  0x4800c000  
+0x00601c03  0x48000000  0x08421c23  0x5800c000  
+0x08725c23  0x5800c000  0x08541c23  0x5800c000  
+0x08045c23  0x5800c000  0x10319c03  0x48014000  
+0x20121ca5  0xc8000000  0x00141ca5  0xc8000000  
+0x30015de4  0x28007800  0x20011de4  0x28007800  
+0xfff1dc43  0x48000000  0x00010007  0x10000000  
+0x79601c03  0x5800c000  0x00011de4  0x28004001  
+0x7970dc23  0x5800c000  0x5901dc23  0x198e0000  
+0x01801c43  0x40000000  0x11619c03  0x2009c000  
+0xa0000007  0x60000001  0x1001dc43  0x48004001  
+0x11711c03  0x2009c000  0x00601c85  0x84000000  
+0x10315c43  0x48004001  0x0400dde2  0x18000000  
+0xc1719c03  0x48014000  0xd191dc43  0x48004000  
+0x04001c03  0x4800c000  0x00401c85  0x94000000  
+0x0060dc25  0x94000000  0x000021f4  0x40000000  
+0x5901dc23  0x198e0000  0x5911dc33  0x1a000000  
+0x20011de4  0x28004001  0x30015de4  0x28004001  
+0x04019de2  0x18000000  0x00419c25  0x94000000  
+0x0140dc85  0x84000000  0x11401c85  0x84000000  
+0x00301c13  0x48000000  0x04209c03  0x4800c000  
+0x11249c03  0x4801c000  0x0801dc23  0x1a0e0000  
+0xfd34dc43  0x48000000  0x800001e7  0x4003fff7  
+0x00001de7  0x80000000  
+
+.section .rel.text._Z6KernelP4NodePiPbS2_S1_S2_ii	REL
+72    vprintf    R_CUDA_ABS32
+600    vprintf    R_CUDA_ABS32
+
+
+.nv.info._Z6KernelP4NodePiPbS2_S1_S2_ii	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_EXTERNS
+	Format:	EIFMT_SVAL
+	Value:	externs:	vprintf(0xe)	
+	<0x2>
+	Attribute:	EIATTR_CBANK_PARAM_OFFSETS
+	Format:	EIFMT_SVAL
+	Value:	0x0 0x8 0x10 0x18 0x20 0x28 0x30 0x34 
+	<0x3>
+	Attribute:	EIATTR_PARAM_CBANK
+	Format:	EIFMT_SVAL
+	Value:	0x9 0x380020 
+	<0x4>
+	Attribute:	EIATTR_CBANK_PARAM_SIZE
+	Format:	EIFMT_HVAL
+	Value:	0x38
+	<0x5>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x7	Offset  : 0x34	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x6>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x6	Offset  : 0x30	Size    : 0x4
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x7>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x5	Offset  : 0x28	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x8>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x4	Offset  : 0x20	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0x9>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x3	Offset  : 0x18	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0xa>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x2	Offset  : 0x10	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0xb>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x1	Offset  : 0x8	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0xc>
+	Attribute:	EIATTR_KPARAM_INFO
+	Format:	EIFMT_SVAL
+	Value:	Index : 0xffffffff	Ordinal : 0x0	Offset  : 0x0	Size    : 0x8
+		Pointee's logAlignment : 0x0	Space : 0x0	cbank : 0x1f	Parameter Space : CBANK	
+	<0xd>
+	Attribute:	EIATTR_SYNC_STACK
+	Format:	EIFMT_SVAL
+	Value:	0x220198 0x20 
+
+
+.nv.info	PROGBITS
+	<0x1>
+	Attribute:	EIATTR_MIN_STACK_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z6KernelP4NodePiPbS2_S1_S2_ii(0xd)	min stack size: 0x10
+	<0x2>
+	Attribute:	EIATTR_FRAME_SIZE
+	Format:	EIFMT_SVAL
+	Value:	function: _Z6KernelP4NodePiPbS2_S1_S2_ii(0xd)	frame size: 0x10
+
+	code for sm_20
+		Function : _Z6KernelP4NodePiPbS2_S1_S2_ii
+	/*0000*/     /*0x00005de428004404*/ 	MOV R1, c [0x1] [0x100];
+	/*0008*/     /*0x40105d034800c000*/ 	IADD R1, R1, -0x10;
+	/*0010*/     /*0x50009de428004001*/ 	MOV R2, c [0x0] [0x54];
+	/*0018*/     /*0x10015de428007800*/ 	MOV R5, c [0xe] [0x4];
+	/*0020*/     /*0x00011de428007800*/ 	MOV R4, c [0xe] [0x0];
+	/*0028*/     /*0x00101c034800c000*/ 	IADD R0, R1, 0x0;
+	/*0030*/     /*0x00109c85c8000000*/ 	STL [R1], R2;
+	/*0038*/     /*0x10019c0348014000*/ 	IADD R6.CC, R0, c [0x0] [0x4];
+	/*0040*/     /*0xfff1dc4348000000*/ 	IADD.X R7, RZ, RZ;
+	/*0048*/     /*0x0001000710000000*/ 	JCAL 0x0;
+	/*0050*/     /*0x94001c042c000000*/ 	S2R R0, SR_CTAid_X;
+	/*0058*/     /*0x84009c042c000000*/ 	S2R R2, SR_Tid_X;
+	/*0060*/     /*0x08059d0340000000*/ 	ISCADD R22, R0, R2, 0x8;
+	/*0068*/     /*0x4161dc231b0e4001*/ 	ISETP.GE.AND P0, pt, R22, c [0x0] [0x50], pt;
+	/*0070*/     /*0x000001e780000000*/ 	@P0 EXIT;
+	/*0078*/     /*0x7d661c237000c004*/ 	BFE R24, R22, 0x11f;
+	/*0080*/     /*0xc1611c0348014000*/ 	IADD R4.CC, R22, c [0x0] [0x30];
+	/*0088*/     /*0xd1815c4348004000*/ 	IADD.X R5, R24, c [0x0] [0x34];
+	/*0090*/     /*0x00401c2584000000*/ 	LD.E.S8 R0, [R4];
+	/*0098*/     /*0xfc01dc23190e0000*/ 	ISETP.EQ.AND P0, pt, R0, RZ, pt;
+	/*00a0*/     /*0x000001e780000000*/ 	@P0 EXIT;
+	/*00a8*/     /*0xe1619c0348014000*/ 	IADD R6.CC, R22, c [0x0] [0x38];
+	/*00b0*/     /*0x0400dde218000000*/ 	MOV32I R3, 0x1;
+	/*00b8*/     /*0x004fdc2594000000*/ 	ST.E.S8 [R4], RZ;
+	/*00c0*/     /*0xf181dc4348004000*/ 	IADD.X R7, R24, c [0x0] [0x3c];
+	/*00c8*/     /*0x31609c035001c000*/ 	IMUL.U32.U32 R2.CC, R22, 0xc;
+	/*00d0*/     /*0x0060dc2594000000*/ 	ST.E.S8 [R6], R3;
+	/*00d8*/     /*0x31601c4320ffc000*/ 	IMAD.U32.U32.HI.X R0.CC, R22, 0xc, RZ;
+	/*00e0*/     /*0x31801c032080c000*/ 	IMAD.U32.U32.X R0, R24, 0xc, R0;
+	/*00e8*/     /*0x80251c0348014000*/ 	IADD R20.CC, R2, c [0x0] [0x20];
+	/*00f0*/     /*0x90055c4348004000*/ 	IADD.X R21, R0, c [0x0] [0x24];
+	/*00f8*/     /*0x01409c8584000000*/ 	LD.E R2, [R20];
+	/*0100*/     /*0x11401c8584000000*/ 	LD.E R0, [R20+0x4];
+	/*0108*/     /*0x08001c0348000000*/ 	IADD R0, R0, R2;
+	/*0110*/     /*0x0801dc23198e0000*/ 	ISETP.LE.AND P0, pt, R0, R2, pt;
+	/*0118*/     /*0x000001e780000000*/ 	@P0 EXIT;
+	/*0120*/     /*0xa0011de428004000*/ 	MOV R4, c [0x0] [0x28];
+	/*0128*/     /*0x1020dce35000c000*/ 	IMUL.HI R3, R2, 0x4;
+	/*0130*/     /*0x10249ca32009c000*/ 	IMAD R18.CC, R2, 0x4, R4;
+	/*0138*/     /*0xb034dc4348004000*/ 	IADD.X R19, R3, c [0x0] [0x2c];
+	/*0140*/     /*0x0125dc8584000000*/ 	LD.E R23, [R18];
+	/*0148*/     /*0xa000000760000007*/ 	SSY 0x338;
+	/*0150*/     /*0x7d765c237000c004*/ 	BFE R25, R23, 0x11f;
+	/*0158*/     /*0xe1711c0348014000*/ 	IADD R4.CC, R23, c [0x0] [0x38];
+	/*0160*/     /*0xf1915c4348004000*/ 	IADD.X R5, R25, c [0x0] [0x3c];
+	/*0168*/     /*0x0040dc2584000000*/ 	LD.E.S8 R3, [R4];
+	/*0170*/     /*0xfc31dc231a8e0000*/ 	ISETP.NE.AND P0, pt, R3, RZ, pt;
+	/*0178*/     /*0x000001f440000000*/ 	@P0 NOP.S CC.T;
+	/*0180*/     /*0x4000dde428004001*/ 	MOV R3, c [0x0] [0x50];
+	/*0188*/     /*0x0c319ca35000c000*/ 	IMUL R6, R3, 0x3;
+	/*0190*/     /*0x7c311c235800c000*/ 	SHR.W R4, R3, 0x1f;
+	/*0198*/     /*0x04301e036000c000*/ 	SHL R0, R3, 0x1;
+	/*01a0*/     /*0x7c615c235800c000*/ 	SHR.W R5, R6, 0x1f;
+	/*01a8*/     /*0x0830de036000c000*/ 	SHL R3, R3, 0x2;
+	/*01b0*/     /*0x0c51dc036800c000*/ 	LOP.AND R7, R5, 0x3;
+	/*01b8*/     /*0x0c415c036800c000*/ 	LOP.AND R5, R4, 0x3;
+	/*01c0*/     /*0x7c321c235800c000*/ 	SHR.W R8, R3, 0x1f;
+	/*01c8*/     /*0x18711c0348000000*/ 	IADD R4, R7, R6;
+	/*01d0*/     /*0x7c019c235800c000*/ 	SHR.W R6, R0, 0x1f;
+	/*01d8*/     /*0x0c81dc036800c000*/ 	LOP.AND R7, R8, 0x3;
+	/*01e0*/     /*0x40515c0348004001*/ 	IADD R5, R5, c [0x0] [0x50];
+	/*01e8*/     /*0x0c619c036800c000*/ 	LOP.AND R6, R6, 0x3;
+	/*01f0*/     /*0x0c71dc0348000000*/ 	IADD R7, R7, R3;
+	/*01f8*/     /*0x0010dc034800c000*/ 	IADD R3, R1, 0x0;
+	/*0200*/     /*0x00601c0348000000*/ 	IADD R0, R6, R0;
+	/*0208*/     /*0x08421c235800c000*/ 	SHR.W R8, R4, 0x2;
+	/*0210*/     /*0x08725c235800c000*/ 	SHR.W R9, R7, 0x2;
+	/*0218*/     /*0x08541c235800c000*/ 	SHR.W R16, R5, 0x2;
+	/*0220*/     /*0x08045c235800c000*/ 	SHR.W R17, R0, 0x2;
+	/*0228*/     /*0x10319c0348014000*/ 	IADD R6.CC, R3, c [0x0] [0x4];
+	/*0230*/     /*0x20121ca5c8000000*/ 	STL.64 [R1+0x8], R8;
+	/*0238*/     /*0x00141ca5c8000000*/ 	STL.64 [R1], R16;
+	/*0240*/     /*0x30015de428007800*/ 	MOV R5, c [0xe] [0xc];
+	/*0248*/     /*0x20011de428007800*/ 	MOV R4, c [0xe] [0x8];
+	/*0250*/     /*0xfff1dc4348000000*/ 	IADD.X R7, RZ, RZ;
+	/*0258*/     /*0x0001000710000000*/ 	JCAL 0x0;
+	/*0260*/     /*0x79601c035800c000*/ 	SHR.U32.W R0, R22, 0x1e;
+	/*0268*/     /*0x00011de428004001*/ 	MOV R4, c [0x0] [0x40];
+	/*0270*/     /*0x7970dc235800c000*/ 	SHR.W R3, R23, 0x1e;
+	/*0278*/     /*0x5901dc23198e0000*/ 	ISETP.LE.AND P0, pt, R16, R22, pt;
+	/*0280*/     /*0x01801c4340000000*/ 	ISCADD R0, R24, R0, 0x2;
+	/*0288*/     /*0x11619c032009c000*/ 	IMAD.U32.U32 R6.CC, R22, 0x4, R4;
+	/*0290*/     /*0xa000000760000001*/ 	SSY 0x300;
+	/*0298*/     /*0x1001dc4348004001*/ 	IADD.X R7, R0, c [0x0] [0x44];
+	/*02a0*/     /*0x11711c032009c000*/ 	IMAD.U32.U32 R4.CC, R23, 0x4, R4;
+	/*02a8*/     /*0x00601c8584000000*/ 	LD.E R0, [R6];
+	/*02b0*/     /*0x10315c4348004001*/ 	IADD.X R5, R3, c [0x0] [0x44];
+	/*02b8*/     /*0x0400dde218000000*/ 	MOV32I R3, 0x1;
+	/*02c0*/     /*0xc1719c0348014000*/ 	IADD R6.CC, R23, c [0x0] [0x30];
+	/*02c8*/     /*0xd191dc4348004000*/ 	IADD.X R7, R25, c [0x0] [0x34];
+	/*02d0*/     /*0x04001c034800c000*/ 	IADD R0, R0, 0x1;
+	/*02d8*/     /*0x00401c8594000000*/ 	ST.E [R4], R0;
+	/*02e0*/     /*0x0060dc2594000000*/ 	ST.E.S8 [R6], R3;
+	/*02e8*/     /*0x000021f440000000*/ 	@!P0 NOP.S CC.T;
+	/*02f0*/     /*0x5901dc23198e0000*/ 	ISETP.LE.AND P0, pt, R16, R22, pt;
+	/*02f8*/     /*0x5911dc331a000000*/ 	ISETP.GT.AND.S P0, pt, R17, R22, P0;
+	/*0300*/     /*0x20011de428004001*/ 	MOV R4, c [0x0] [0x48];
+	/*0308*/     /*0x30015de428004001*/ 	MOV R5, c [0x0] [0x4c];
+	/*0310*/     /*0x04019de218000000*/ 	MOV32I R6, 0x1;
+	/*0318*/     /*0x00419c2594000000*/ 	ST.E.S8 [R4], R6;
+	/*0320*/     /*0x0140dc8584000000*/ 	LD.E R3, [R20];
+	/*0328*/     /*0x11401c8584000000*/ 	LD.E R0, [R20+0x4];
+	/*0330*/     /*0x00301c1348000000*/ 	IADD.S R0, R3, R0;
+	/*0338*/     /*0x04209c034800c000*/ 	IADD R2, R2, 0x1;
+	/*0340*/     /*0x11249c034801c000*/ 	IADD R18.CC, R18, 0x4;
+	/*0348*/     /*0x0801dc231a0e0000*/ 	ISETP.GT.AND P0, pt, R0, R2, pt;
+	/*0350*/     /*0xfd34dc4348000000*/ 	IADD.X R19, R19, RZ;
+	/*0358*/     /*0x800001e74003fff7*/ 	@P0 BRA 0x140;
+	/*0360*/     /*0x00001de780000000*/ 	EXIT;
+		...............................................
+
+
+
+Fatbin ptx code:
+================
+arch = sm_20
+code version = [2,3]
+producer = cuda
+host = linux
+compile_size = 64bit
+identifier = /home/sr/BFS/naive4gpuBfs/topDownBfs/main.cu
+	.version 2.3
+	.target sm_20
+	.address_size 64
+	// compiled with /home/sr/CUDA/cuda-4.0/open64/lib//be
+	// nvopencc 4.0 built on 2011-05-12
+
+	.extern .func (.param .s32 __cudaretf_printf) printf (.param .u64 __cudaparmf1_printf)
+
+	.extern .func (.param .s32 __cudaretf_vprintf) vprintf (.param .u64 __cudaparmf1_vprintf, .param .u64 __cudaparmf2_vprintf)
+
+	//-----------------------------------------------------------
+	// Compiling /tmp/tmpxft_000044fe_00000000-7_main.cpp3.i (/tmp/ccBI#.igHhtF)
+	//-----------------------------------------------------------
+
+	//-----------------------------------------------------------
+	// Options:
+	//-----------------------------------------------------------
+	//  Target:ptx, ISA:sm_20, Endian:little, Pointer Size:64
+	//  -O3	(Optimization level)
+	//  -g0	(Debug level)
+	//  -m2	(Report advisories)
+	//-----------------------------------------------------------
+
+	.file	1	"<command-line>"
+	.file	2	"/tmp/tmpxft_000044fe_00000000-6_main.cudafe2.gpu"
+	.file	3	"/home/sr/BFS/naive4gpuBfs/topDownBfs/main.cu"
+	.file	4	"/usr/lib/gcc/x86_64-linux-gnu/4.4.7/include/stddef.h"
+	.file	5	"/home/sr/CUDA/cuda-4.0/bin/../include/crt/device_runtime.h"
+	.file	6	"/home/sr/CUDA/cuda-4.0/bin/../include/host_defines.h"
+	.file	7	"/home/sr/CUDA/cuda-4.0/bin/../include/builtin_types.h"
+	.file	8	"/home/sr/CUDA/cuda-4.0/bin/../include/device_types.h"
+	.file	9	"/home/sr/CUDA/cuda-4.0/bin/../include/driver_types.h"
+	.file	10	"/home/sr/CUDA/cuda-4.0/bin/../include/surface_types.h"
+	.file	11	"/home/sr/CUDA/cuda-4.0/bin/../include/texture_types.h"
+	.file	12	"/home/sr/CUDA/cuda-4.0/bin/../include/vector_types.h"
+	.file	13	"/home/sr/CUDA/cuda-4.0/bin/../include/device_launch_parameters.h"
+	.file	14	"/home/sr/CUDA/cuda-4.0/bin/../include/crt/storage_class.h"
+	.file	15	"/usr/include/x86_64-linux-gnu/bits/types.h"
+	.file	16	"/usr/include/x86_64-linux-gnu/bits/types/clock_t.h"
+	.file	17	"/home/sr/BFS/naive4gpuBfs/topDownBfs/kernel.cu"
+	.file	18	"/home/sr/CUDA/cuda-4.0/bin/../include/common_functions.h"
+	.file	19	"/home/sr/CUDA/cuda-4.0/bin/../include/math_functions.h"
+	.file	20	"/home/sr/CUDA/cuda-4.0/bin/../include/math_constants.h"
+	.file	21	"/home/sr/CUDA/cuda-4.0/bin/../include/device_functions.h"
+	.file	22	"/home/sr/CUDA/cuda-4.0/bin/../include/sm_11_atomic_functions.h"
+	.file	23	"/home/sr/CUDA/cuda-4.0/bin/../include/sm_12_atomic_functions.h"
+	.file	24	"/home/sr/CUDA/cuda-4.0/bin/../include/sm_13_double_functions.h"
+	.file	25	"/home/sr/CUDA/cuda-4.0/bin/../include/sm_20_atomic_functions.h"
+	.file	26	"/home/sr/CUDA/cuda-4.0/bin/../include/sm_20_intrinsics.h"
+	.file	27	"/home/sr/CUDA/cuda-4.0/bin/../include/surface_functions.h"
+	.file	28	"/home/sr/CUDA/cuda-4.0/bin/../include/texture_fetch_functions.h"
+	.file	29	"/home/sr/CUDA/cuda-4.0/bin/../include/math_functions_dbl_ptx3.h"
+
+	.global .align 1 .b8 __constant845[5] = {0xa,0x20,0x25,0x64,0x0};
+	.global .align 1 .b8 __constant847[20] = {0xa,0x20,0x25,0x64,0x20,0x25,0x64,0x20,0x25,0x64,0x20,0x25,0x64,0x21,0x21,0x21,0x21,0x21,0x21,0x0};
+
+	.entry _Z6KernelP4NodePiPbS2_S1_S2_ii (
+		.param .u64 __cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_g_graph_nodes,
+		.param .u64 __cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_g_graph_edges,
+		.param .u64 __cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_g_graph_mask,
+		.param .u64 __cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_g_graph_visited,
+		.param .u64 __cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_g_cost,
+		.param .u64 __cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_g_over,
+		.param .s32 __cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_no_of_nodes,
+		.param .s32 __cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_num_of_threads_per_block)
+	{
+	.reg .u32 %r<114>;
+	.reg .u64 %rd<27>;
+	.reg .pred %p<11>;
+	.local .align 8 .b8 __cuda___cuda__temp__valist_array_41_1656[16];
+	.param .u64 __cudaparma1_vprintf;
+	.param .u64 __cudaparma2_vprintf;
+	.loc	17	5	0
+$LDWbegin__Z6KernelP4NodePiPbS2_S1_S2_ii:
+	.loc	17	12	0
+	ld.param.s32 	%r1, [__cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_num_of_threads_per_block];
+	st.local.s32 	[__cuda___cuda__temp__valist_array_41_1656+0], %r1;
+	cvta.global.u64 	%rd1, __constant845;
+	st.param.u64 	[__cudaparma1_vprintf], %rd1;
+	cvta.local.u64 	%rd2, __cuda___cuda__temp__valist_array_41_1656;
+	st.param.u64 	[__cudaparma2_vprintf], %rd2;
+	call.uni (_), vprintf, (__cudaparma1_vprintf, __cudaparma2_vprintf);
+	.loc	17	5	0
+	mov.u32 	%r2, %ctaid.x;
+	mul.lo.u32 	%r3, %r2, 256;
+	mov.u32 	%r4, %tid.x;
+	add.u32 	%r5, %r4, %r3;
+	ld.param.s32 	%r6, [__cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_no_of_nodes];
+	setp.le.s32 	%p1, %r6, %r5;
+	@%p1 bra 	$Lt_0_11010;
+	cvt.s64.s32 	%rd3, %r5;
+	ld.param.u64 	%rd4, [__cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_g_graph_mask];
+	add.u64 	%rd5, %rd3, %rd4;
+	ld.s8 	%r7, [%rd5+0];
+	mov.u32 	%r8, 0;
+	setp.eq.s32 	%p2, %r7, %r8;
+	@%p2 bra 	$Lt_0_11010;
+	.loc	17	16	0
+	mov.s32 	%r9, 0;
+	st.s8 	[%rd5+0], %r9;
+	.loc	17	17	0
+	ld.param.u64 	%rd6, [__cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_g_graph_visited];
+	mov.s32 	%r10, 1;
+	add.u64 	%rd7, %rd3, %rd6;
+	st.s8 	[%rd7+0], %r10;
+	.loc	17	18	0
+	ld.param.u64 	%rd8, [__cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_g_graph_nodes];
+	mul.lo.u64 	%rd9, %rd3, 12;
+	add.u64 	%rd10, %rd8, %rd9;
+	ld.s32 	%r11, [%rd10+0];
+	mov.s32 	%r12, %r11;
+	ld.s32 	%r13, [%rd10+4];
+	add.s32 	%r14, %r13, %r11;
+	setp.le.s32 	%p3, %r14, %r11;
+	@%p3 bra 	$Lt_0_11010;
+	ld.param.u64 	%rd11, [__cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_g_graph_edges];
+	cvt.s64.s32 	%rd12, %r11;
+	mul.wide.s32 	%rd13, %r11, 4;
+	add.u64 	%rd14, %rd11, %rd13;
+$Lt_0_7938:
+ //<loop> Loop body line 18, nesting depth: 1, estimated iterations: unknown
+	.loc	17	20	0
+	ld.s32 	%r15, [%rd14+0];
+	cvt.s64.s32 	%rd15, %r15;
+	add.u64 	%rd16, %rd15, %rd6;
+	ld.s8 	%r16, [%rd16+0];
+	mov.u32 	%r17, 0;
+	setp.ne.s32 	%p4, %r16, %r17;
+	@%p4 bra 	$Lt_0_8194;
+	.loc	17	23	0
+	shr.s32 	%r18, %r6, 31;
+	mov.s32 	%r19, 3;
+	and.b32 	%r20, %r18, %r19;
+	add.s32 	%r21, %r20, %r6;
+	shr.s32 	%r22, %r21, 2;
+	st.local.s32 	[__cuda___cuda__temp__valist_array_41_1656+0], %r22;
+	mul.lo.s32 	%r23, %r6, 2;
+	shr.s32 	%r24, %r23, 31;
+	mov.s32 	%r25, 3;
+	and.b32 	%r26, %r24, %r25;
+	add.s32 	%r27, %r26, %r23;
+	shr.s32 	%r28, %r27, 2;
+	st.local.s32 	[__cuda___cuda__temp__valist_array_41_1656+4], %r28;
+	mul.lo.s32 	%r29, %r6, 3;
+	shr.s32 	%r30, %r29, 31;
+	mov.s32 	%r31, 3;
+	and.b32 	%r32, %r30, %r31;
+	add.s32 	%r33, %r32, %r29;
+	shr.s32 	%r34, %r33, 2;
+	st.local.s32 	[__cuda___cuda__temp__valist_array_41_1656+8], %r34;
+	mul.lo.s32 	%r35, %r6, 4;
+	shr.s32 	%r36, %r35, 31;
+	mov.s32 	%r37, 3;
+	and.b32 	%r38, %r36, %r37;
+	add.s32 	%r39, %r38, %r35;
+	shr.s32 	%r40, %r39, 2;
+	st.local.s32 	[__cuda___cuda__temp__valist_array_41_1656+12], %r40;
+	cvta.global.u64 	%rd17, __constant847;
+	st.param.u64 	[__cudaparma1_vprintf], %rd17;
+	cvta.local.u64 	%rd18, __cuda___cuda__temp__valist_array_41_1656;
+	st.param.u64 	[__cudaparma2_vprintf], %rd18;
+	call.uni (_), vprintf, (__cudaparma1_vprintf, __cudaparma2_vprintf);
+	.loc	17	27	0
+	ld.param.u64 	%rd19, [__cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_g_cost];
+	mul.lo.u64 	%rd20, %rd3, 4;
+	add.u64 	%rd21, %rd19, %rd20;
+	ld.s32 	%r41, [%rd21+0];
+	add.s32 	%r42, %r41, 1;
+	mul.lo.u64 	%rd22, %rd15, 4;
+	add.u64 	%rd23, %rd19, %rd22;
+	st.s32 	[%rd23+0], %r42;
+	.loc	17	28	0
+	mov.s32 	%r43, 1;
+	add.u64 	%rd24, %rd15, %rd4;
+	st.s8 	[%rd24+0], %r43;
+	setp.le.s32 	%p5, %r22, %r5;
+	@%p5 bra 	$Lt_0_8962;
+	.loc	17	30	0
+	mov.s32 	%r44, 8;
+	mov.u32 	%r45, %r44;
+	mov.u32 	%r46, %r15;
+	addc.s32 %r47, %r45, %r46;
+	mov.s32 	%r15, %r47;
+	.loc	17	31	0
+	mov.s32 	%r48, 512;
+	mov.u32 	%r49, %r48;
+	mov.u32 	%r50, %r15;
+	addc.s32 %r51, %r49, %r50;
+	mov.s32 	%r15, %r51;
+	.loc	17	32	0
+	mov.s32 	%r52, 520;
+	mov.u32 	%r53, %r52;
+	mov.u32 	%r54, %r15;
+	addc.s32 %r55, %r53, %r54;
+	bra.uni 	$Lt_0_10242;
+$Lt_0_8962:
+	set.gt.u32.s32 	%r56, %r28, %r5;
+	neg.s32 	%r57, %r56;
+	set.le.u32.s32 	%r58, %r22, %r5;
+	neg.s32 	%r59, %r58;
+	and.b32 	%r60, %r57, %r59;
+	mov.u32 	%r61, 0;
+	setp.eq.s32 	%p6, %r60, %r61;
+	@%p6 bra 	$Lt_0_9474;
+	.loc	17	35	0
+	mov.s32 	%r62, 32768;
+	mov.u32 	%r63, %r62;
+	mov.u32 	%r64, %r15;
+	addc.s32 %r65, %r63, %r64;
+	mov.s32 	%r15, %r65;
+	.loc	17	36	0
+	mov.s32 	%r66, 33280;
+	mov.u32 	%r67, %r66;
+	mov.u32 	%r68, %r15;
+	addc.s32 %r69, %r67, %r68;
+	mov.s32 	%r15, %r69;
+	.loc	17	37	0
+	mov.s32 	%r70, 33288;
+	mov.u32 	%r71, %r70;
+	mov.u32 	%r72, %r15;
+	addc.s32 %r73, %r71, %r72;
+	bra.uni 	$Lt_0_10242;
+$Lt_0_9474:
+	set.gt.u32.s32 	%r74, %r34, %r5;
+	neg.s32 	%r75, %r74;
+	set.le.u32.s32 	%r76, %r28, %r5;
+	neg.s32 	%r77, %r76;
+	and.b32 	%r78, %r75, %r77;
+	mov.u32 	%r79, 0;
+	setp.eq.s32 	%p7, %r78, %r79;
+	@%p7 bra 	$Lt_0_9986;
+	.loc	17	40	0
+	mov.s32 	%r80, 2097152;
+	mov.u32 	%r81, %r80;
+	mov.u32 	%r82, %r15;
+	addc.s32 %r83, %r81, %r82;
+	mov.s32 	%r15, %r83;
+	.loc	17	41	0
+	mov.s32 	%r84, 2097160;
+	mov.u32 	%r85, %r84;
+	mov.u32 	%r86, %r15;
+	addc.s32 %r87, %r85, %r86;
+	mov.s32 	%r15, %r87;
+	.loc	17	42	0
+	mov.s32 	%r88, 2097672;
+	mov.u32 	%r89, %r88;
+	mov.u32 	%r90, %r15;
+	addc.s32 %r91, %r89, %r90;
+	bra.uni 	$Lt_0_10242;
+$Lt_0_9986:
+	set.gt.u32.s32 	%r92, %r40, %r5;
+	neg.s32 	%r93, %r92;
+	set.le.u32.s32 	%r94, %r34, %r5;
+	neg.s32 	%r95, %r94;
+	and.b32 	%r96, %r93, %r95;
+	mov.u32 	%r97, 0;
+	setp.eq.s32 	%p8, %r96, %r97;
+	@%p8 bra 	$Lt_0_10242;
+	.loc	17	45	0
+	mov.s32 	%r98, 2129920;
+	mov.u32 	%r99, %r98;
+	mov.u32 	%r100, %r15;
+	addc.s32 %r101, %r99, %r100;
+	mov.s32 	%r15, %r101;
+	.loc	17	46	0
+	mov.s32 	%r102, 2129928;
+	mov.u32 	%r103, %r102;
+	mov.u32 	%r104, %r15;
+	addc.s32 %r105, %r103, %r104;
+	mov.s32 	%r15, %r105;
+	.loc	17	47	0
+	mov.s32 	%r106, 2130432;
+	mov.u32 	%r107, %r106;
+	mov.u32 	%r108, %r15;
+	addc.s32 %r109, %r107, %r108;
+$Lt_0_10242:
+$Lt_0_9730:
+$Lt_0_9218:
+$Lt_0_8706:
+	.loc	17	51	0
+	mov.s32 	%r110, 1;
+	ld.param.u64 	%rd25, [__cudaparm__Z6KernelP4NodePiPbS2_S1_S2_ii_g_over];
+	st.s8 	[%rd25+0], %r110;
+	ld.s32 	%r111, [%rd10+0];
+	ld.s32 	%r112, [%rd10+4];
+	add.s32 	%r14, %r111, %r112;
+$Lt_0_8194:
+	.loc	17	18	0
+	add.s32 	%r12, %r12, 1;
+	add.u64 	%rd14, %rd14, 4;
+	setp.gt.s32 	%p9, %r14, %r12;
+	@%p9 bra 	$Lt_0_7938;
+$Lt_0_11010:
+$L_0_6914:
+	.loc	17	56	0
+	exit;
+$LDWend__Z6KernelP4NodePiPbS2_S1_S2_ii:
+	} // _Z6KernelP4NodePiPbS2_S1_S2_ii
+

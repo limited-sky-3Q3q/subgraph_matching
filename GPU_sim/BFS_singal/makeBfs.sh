@@ -1,0 +1,1 @@
+nvcc /home/sr/GPGPU-Sim/Chiplet-GPGPU-Sim-MessagePassing/BFS_singal/bfs.cu -o /home/sr/GPGPU-Sim/Chiplet-GPGPU-Sim-MessagePassing/BFS_singal/bfs -arch sm_20
