@@ -287,7 +287,7 @@ void ComputeSetIntersection::ComputeCNMergeBasedAVX2(const VertexID* larray, con
     }
     
     cn_count = (ui)(cur_back_ptr - cn);
-    printf("%d %d %d\n", l_count, r_count, cn_count);
+    // printf("%d %d %d\n", l_count, r_count, cn_count);
     if (li < lc && ri < rc) { 
         while (true) {
             while (larray[li] < rarray[ri]) {

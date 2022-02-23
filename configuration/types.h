@@ -32,6 +32,7 @@ public:
     VertexID* bn_;
     VertexID* fn_;
     size_t estimated_embeddings_num_;
+    ui sum;
 public:
     TreeNode() {
         id_ = 0;
@@ -46,6 +47,7 @@ public:
         bn_count_ = 0;
         fn_count_ = 0;
         estimated_embeddings_num_ = 0;
+        sum = 0;
     }
 
     ~TreeNode() {
@@ -60,6 +62,11 @@ public:
         bn_ = new VertexID[size];
         fn_ = new VertexID[size];
         children_ = new VertexID[size];
+        sum = size;
+    }
+    int computeSize() {
+        // return sizeof(VertexID)*2 + sizeof(ui)*5 + sizeof(VertexID)*(under_level_count_ + children_count_ + bn_count_ + fn_count_) + sizeof(size_t);
+        return sizeof(VertexID)*sum*4;
     }
 };
 

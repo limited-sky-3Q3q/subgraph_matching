@@ -1255,13 +1255,13 @@ EvaluateQuery::exploreCECIStyle(const Graph *data_graph, const Graph *query_grap
         valid_candidates[cur_depth][i] = candidates[start_vertex][i];
     }
 
-    auto start1 = std::chrono::high_resolution_clock::now();
-    auto start2 = std::chrono::high_resolution_clock::now();
-    auto end1 = std::chrono::high_resolution_clock::now();
-    auto end2 = std::chrono::high_resolution_clock::now();
-    auto time1 = start1 - start1;
-    auto time2 = start1 - start1;
-    int total1 = 0, total2 = 0;
+    // auto start1 = std::chrono::high_resolution_clock::now();
+    // auto start2 = std::chrono::high_resolution_clock::now();
+    // auto end1 = std::chrono::high_resolution_clock::now();
+    // auto end2 = std::chrono::high_resolution_clock::now();
+    // auto time1 = start1 - start1;
+    // auto time2 = start1 - start1;
+    // int total1 = 0, total2 = 0;
 #ifdef ENABLE_FAILING_SET
     std::vector<std::bitset<MAXIMUM_QUERY_GRAPH_SIZE>> ancestors;
     computeAncestor(query_graph, order, ancestors);
@@ -1293,7 +1293,8 @@ EvaluateQuery::exploreCECIStyle(const Graph *data_graph, const Graph *query_grap
                 continue;
             }
             embedding[u] = v;//该候选节点可用
-            visited_vertices[v] = true;
+            visited_vertices[v] = true;//! 并行化时会进行多播
+            // printf("multcast\n");
             /*
             block1.2------------------------------------------------
             */
@@ -1315,11 +1316,13 @@ EvaluateQuery::exploreCECIStyle(const Graph *data_graph, const Graph *query_grap
                 call_count += 1;//记录搜索树的结点数量
                 cur_depth += 1;
                 idx[cur_depth] = 0;
-                
+                int temp = sizeof(TE_Candidates) + sizeof(NTE_Candidates);
+                printf("other: %d, TE+NTE: %d\n", tree->computeSize(), temp);
                 generateValidCandidates(cur_depth, embedding, idx_count, valid_candidates, order, temp_buffer, tree,
                                         TE_Candidates,
                                         NTE_Candidates);
-                
+                // traffic模拟
+
 #ifdef ENABLE_FAILING_SET
                 if (idx_count[cur_depth] == 0) {
                     vec_failing_set[cur_depth - 1] = ancestors[order[cur_depth]];

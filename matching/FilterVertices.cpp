@@ -373,7 +373,7 @@ FilterVertices::CECIFilter(const Graph *data_graph, const Graph *query_graph, ui
     for (auto& value : NTE_Candidates) {
         value.resize(query_vertices_count);
     }
-
+    printf("NTE size: %d", sizeof(VertexID)*query_vertices_count*query_vertices_count*query_vertices_count);
     for (ui i = 1; i < query_vertices_count; ++i) {
         VertexID u = order[i];
         TreeNode &u_node = tree[u];
