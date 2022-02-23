@@ -1,36 +1,7 @@
-# SubgraphMatching
-## Introduction
-We study the performance of eight representative in-memory
-subgraph matching algorithms. Specifically, we put QuickSI,
-GraphQL, CFL, CECI, DP-iso, RI and VF2++ in a common
-framework to compare them on the following four aspects:
-(1) method of filtering candidate vertices in the data graph;
-(2) method of ordering query vertices; (3) method of enumer-
-ating partial results; and (4) other optimization techniques.
-Then, we compare the overall performance of these algo-
-rithms with Glasgow, an algorithm based on the constraint
-programming. Through experiments, we find that (1) the fil-
-tering method of GraphQL is competitive to that of the latest
-algorithms CFL, CECI and DP-iso in terms of pruning power;
-(2) the ordering methods in GraphQL and RI are usually the
-most effective; (3) the set intersection based local candidate
-computation in CECI and DP-iso performs the best in the
-enumeration; and (4) the failing sets pruning in DP-iso can
-significantly improve the performance when queries become
-large. Based on these new results, we recommend users to
-adopt specific techniques depending on the data graph den-
-sity and query size.
+## 子图匹配算法
+这个项目是在实验室时的实验代码。为了针对子图匹配进行设计空间探索，需要对子图匹配算法进行片间通信分析
 
-For the details, please refer to our SIGMOD'2020 paper
-"In-Memory Subgraph Matching: an In-depth Study"
-by [Dr. Shixuan Sun](https://github.com/shixuansun) and [Prof. Qiong Luo](http://www.cse.ust.hk/~luo/).
-If you have any further questions, please feel free to contact us.
-
-Please cite our paper, if you use our source code.
-
-* "Shixuan Sun and Qiong Luo. In-Memory Subgraph Matching: an In-depth Study. SIGMOD 2020."
-
-
+基础代码来自论文《In-Memory Subgraph Matching: An In-depth Study》的相关内容，这里根据源码进行了修改，以便用于片间通信实验。
 
 ## Compile
 Under the root directory of the project, execute the following commands to compile the source code.
